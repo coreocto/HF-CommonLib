@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/HF-CommonLib.iml" filepath="$PROJECT_DIR$/.idea/modules/HF-CommonLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HF-CommonLib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/HF-CommonLib_main.iml" group="HF-CommonLib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/HF-CommonLib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/HF-CommonLib_test.iml" group="HF-CommonLib" />
     </modules>
   </component>
 </project>
