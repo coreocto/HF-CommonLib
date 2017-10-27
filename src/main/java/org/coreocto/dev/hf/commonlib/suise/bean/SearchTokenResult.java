@@ -1,4 +1,4 @@
-package org.coreocto.dev.heavensfall.commonlib.suise.bean;
+package org.coreocto.dev.hf.commonlib.suise.bean;
 
 import java.util.List;
 
