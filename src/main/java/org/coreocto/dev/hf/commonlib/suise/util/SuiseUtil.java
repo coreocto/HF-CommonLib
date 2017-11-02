@@ -1,5 +1,6 @@
 package org.coreocto.dev.hf.commonlib.suise.util;
 
+import org.coreocto.dev.hf.commonlib.util.IAes128Cbc;
 import org.coreocto.dev.hf.commonlib.util.IBase64;
 import org.coreocto.dev.hf.commonlib.util.IMd5;
 
@@ -15,10 +16,12 @@ public class SuiseUtil {
 
     private IBase64 base64;
     private IMd5 md5;
+    private IAes128Cbc aes128Cbc;
 
-    public SuiseUtil(IBase64 base64, IMd5 md5) {
+    public SuiseUtil(IBase64 base64, IMd5 md5, IAes128Cbc aes128Cbc) {
         this.base64 = base64;
         this.md5 = md5;
+        this.aes128Cbc = aes128Cbc;
     }
 
     public IBase64 getBase64() {
@@ -27,6 +30,10 @@ public class SuiseUtil {
 
     public IMd5 getMd5() {
         return md5;
+    }
+
+    public IAes128Cbc getAes128Cbc() {
+        return aes128Cbc;
     }
 
     public String bytesToHex(byte[] bytes) {
