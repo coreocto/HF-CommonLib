@@ -37,21 +37,21 @@ public class SuiseUtil {
 //        return bytes;
 //    }
 
-    public String H(String searchToken, String pseudorandomVal) {
-
-        IBase64 base64 = registry.getBase64();
-
-        byte[] a = base64.decodeToByteArray(searchToken);
-        byte[] b = base64.decodeToByteArray(pseudorandomVal);
-
-        byte[] digest = H(a, b);
-
-        if (digest == null) {
-            return null;
-        }
-
-        return base64.encodeToString(digest);
-    }
+//    public String H(String searchToken, String pseudorandomVal) {
+//
+//        IBase64 base64 = registry.getBase64();
+//
+//        byte[] a = base64.decodeToByteArray(searchToken);
+//        byte[] b = base64.decodeToByteArray(pseudorandomVal);
+//
+//        byte[] digest = H(a, b);
+//
+//        if (digest == null) {
+//            return null;
+//        }
+//
+//        return base64.encodeToString(digest);
+//    }
 
     public byte[] H(byte[] searchToken, byte[] pseudorandomVal) {
         byte[] c = new byte[searchToken.length + pseudorandomVal.length];
@@ -66,14 +66,21 @@ public class SuiseUtil {
         rnd.nextBytes(bytes);
     }
 
-    public String g(int noOfBytes) {
+//    public String g(int noOfBytes) {
+//
+//        IBase64 base64 = registry.getBase64();
+//
+//        byte[] randomBytes = new byte[noOfBytes];
+//        SecureRandom sr = new SecureRandom();
+//        sr.nextBytes(randomBytes);
+//        return base64.encodeToString(randomBytes);
+//    }
 
-        IBase64 base64 = registry.getBase64();
-
+    public byte[] g(int noOfBytes) {
         byte[] randomBytes = new byte[noOfBytes];
         SecureRandom sr = new SecureRandom();
         sr.nextBytes(randomBytes);
-        return base64.encodeToString(randomBytes);
+        return randomBytes;
     }
 
     public void copy(int bufferSize, InputStream is, OutputStream os) throws IOException {
