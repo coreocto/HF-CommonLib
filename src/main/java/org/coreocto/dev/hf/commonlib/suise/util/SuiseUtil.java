@@ -58,7 +58,7 @@ public class SuiseUtil {
         System.arraycopy(searchToken, 0, c, 0, searchToken.length);
         System.arraycopy(pseudorandomVal, 0, c, searchToken.length, pseudorandomVal.length);
 
-        return registry.getMd5().getHash(c);
+        return registry.getHashFunc().getHash(c);
     }
 
     public void setRandomBytes(byte[] bytes, int seed) {

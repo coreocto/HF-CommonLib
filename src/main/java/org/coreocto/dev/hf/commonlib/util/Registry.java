@@ -1,27 +1,30 @@
 package org.coreocto.dev.hf.commonlib.util;
 
+import org.coreocto.dev.hf.commonlib.crypto.IBlockCipherCbc;
+import org.coreocto.dev.hf.commonlib.crypto.IHashFunc;
+
 public class Registry {
-    private IAes128Cbc aes128Cbc;
+    private IBlockCipherCbc blockCipherCbc;
     private IBase64 base64;
     private ILogger logger;
-    private IMd5 md5;
+    private IHashFunc hashFunc;
 
     public Registry() {
     }
 
-    public Registry(IAes128Cbc aes128Cbc, IBase64 base64, ILogger logger, IMd5 md5) {
-        this.aes128Cbc = aes128Cbc;
+    public Registry(IBlockCipherCbc blockCipherCbc, IBase64 base64, ILogger logger, IHashFunc hashFunc) {
+        this.blockCipherCbc = blockCipherCbc;
         this.base64 = base64;
         this.logger = logger;
-        this.md5 = md5;
+        this.hashFunc = hashFunc;
     }
 
-    public IAes128Cbc getAes128Cbc() {
-        return aes128Cbc;
+    public IBlockCipherCbc getBlockCipherCbc() {
+        return blockCipherCbc;
     }
 
-    public void setAes128Cbc(IAes128Cbc aes128Cbc) {
-        this.aes128Cbc = aes128Cbc;
+    public void setBlockCipherCbc(IBlockCipherCbc blockCipherCbc) {
+        this.blockCipherCbc = blockCipherCbc;
     }
 
     public IBase64 getBase64() {
@@ -40,11 +43,11 @@ public class Registry {
         this.logger = logger;
     }
 
-    public IMd5 getMd5() {
-        return md5;
+    public IHashFunc getHashFunc() {
+        return hashFunc;
     }
 
-    public void setMd5(IMd5 md5) {
-        this.md5 = md5;
+    public void setHashFunc(IHashFunc hashFunc) {
+        this.hashFunc = hashFunc;
     }
 }
