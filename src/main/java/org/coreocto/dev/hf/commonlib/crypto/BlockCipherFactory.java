@@ -16,6 +16,7 @@ public class BlockCipherFactory {
     public static final String MODE_CBC = "CBC";
     public static final String MODE_ECB = "ECB";
     public static final String PADDING_PKCS5 = "PKCS5Padding";
+    public static final String SEP = "/";
 
     public static Cipher getCipher(String cipher, String cipherTransform, int mode, byte[] key, byte[] iv) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidAlgorithmParameterException, InvalidKeyException {
         SecretKeySpec secretKeySpec = new SecretKeySpec(key, cipher);
