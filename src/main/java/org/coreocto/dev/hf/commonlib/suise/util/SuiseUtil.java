@@ -19,6 +19,10 @@ public class SuiseUtil {
         this.registry = registry;
     }
 
+    public Registry getRegistry(){
+        return registry;
+    }
+
 //    public String bytesToHex(byte[] bytes) {
 //        char[] hexChars = new char[bytes.length * 2];
 //        for (int j = 0; j < bytes.length; j++) {
