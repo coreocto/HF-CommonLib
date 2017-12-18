@@ -10,6 +10,14 @@ public class TermFreq {
         this.terms = new HashMap<>();
     }
 
+    public Map<String, Integer> getTerms() {
+        return terms;
+    }
+
+    public void clear() {
+        terms.clear();
+    }
+
     public void inc(String word) {
         int oldCnt = get(word);
         this.set(word, oldCnt + 1);
