@@ -87,11 +87,11 @@ public class SuiseUtil {
         return randomBytes;
     }
 
-    public void copy(int bufferSize, InputStream is, OutputStream os) throws IOException {
-        int i;
-        byte[] b = new byte[bufferSize];
-        while ((i = is.read(b)) != -1) {
-            os.write(b, 0, i);
-        }
-    }
+//    public void copy(int bufferSize, InputStream is, OutputStream os) throws IOException {
+//        int i;
+//        byte[] b = new byte[bufferSize];
+//        while ((i = is.read(b)) != -1) {
+//            os.write(b, 0, i);
+//        }
+//    }
 }
