@@ -1,25 +1,20 @@
 package org.coreocto.dev.hf.commonlib.vasst.bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SearchResult {
-    private double score;
-    private String docId;
+
+    private List<RelScore> relScores = new ArrayList<>();
     private int matchedCnt;
     private int displayCnt;
 
-    public double getScore() {
-        return score;
+    public List<RelScore> getRelScores() {
+        return relScores;
     }
 
-    public void setScore(double score) {
-        this.score = score;
-    }
-
-    public String getDocId() {
-        return docId;
-    }
-
-    public void setDocId(String docId) {
-        this.docId = docId;
+    public void setRelScores(List<RelScore> relScores) {
+        this.relScores = relScores;
     }
 
     public int getMatchedCnt() {
