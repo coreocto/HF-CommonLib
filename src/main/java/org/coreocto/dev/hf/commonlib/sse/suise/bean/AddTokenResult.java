@@ -1,4 +1,4 @@
-package org.coreocto.dev.hf.commonlib.suise.bean;
+package org.coreocto.dev.hf.commonlib.sse.suise.bean;
 
 import java.util.List;
 

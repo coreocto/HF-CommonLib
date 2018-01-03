@@ -1,4 +1,4 @@
-package org.coreocto.dev.hf.commonlib.vasst.bean;
+package org.coreocto.dev.hf.commonlib.sse.vasst.bean;
 
 import java.util.ArrayList;
 import java.util.List;

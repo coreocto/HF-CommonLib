@@ -1,4 +1,4 @@
-package org.coreocto.dev.hf.commonlib.vasst.bean;
+package org.coreocto.dev.hf.commonlib.sse.vasst.bean;
 
 public class RelScore {
     private String docId;
