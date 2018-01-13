@@ -1,8 +1,8 @@
 package org.coreocto.dev.hf.commonlib.sse.suise.util;
 
 import org.coreocto.dev.hf.commonlib.util.Registry;
+import org.coreocto.dev.hf.commonlib.util.Util;
 
-import java.security.SecureRandom;
 import java.util.Random;
 
 public class SuiseUtil {
@@ -32,8 +32,7 @@ public class SuiseUtil {
 
     public byte[] g(int noOfBytes) {
         byte[] randomBytes = new byte[noOfBytes];
-        SecureRandom sr = new SecureRandom();
-        sr.nextBytes(randomBytes);
+        Util.fillRandomBytes(randomBytes);
         return randomBytes;
     }
 }

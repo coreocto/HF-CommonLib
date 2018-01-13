@@ -3,6 +3,7 @@ package org.coreocto.dev.hf.commonlib.util;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.security.SecureRandom;
 import java.util.*;
 
 public class Util {
@@ -37,5 +38,10 @@ public class Util {
             total += r;
         }
         return total;
+    }
+
+    public static void fillRandomBytes(byte[] bytes) {
+        SecureRandom sr = new SecureRandom();
+        sr.nextBytes(bytes);
     }
 }
