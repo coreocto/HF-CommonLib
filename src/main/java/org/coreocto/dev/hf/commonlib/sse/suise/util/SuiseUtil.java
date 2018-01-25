@@ -3,6 +3,8 @@ package org.coreocto.dev.hf.commonlib.sse.suise.util;
 import org.coreocto.dev.hf.commonlib.util.Registry;
 import org.coreocto.dev.hf.commonlib.util.Util;
 
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
 public class SuiseUtil {
@@ -17,7 +19,7 @@ public class SuiseUtil {
         return registry;
     }
 
-    public byte[] H(byte[] searchToken, byte[] pseudorandomVal) {
+    public byte[] H(byte[] searchToken, byte[] pseudorandomVal) throws InvalidKeyException, NoSuchAlgorithmException {
         byte[] c = new byte[searchToken.length + pseudorandomVal.length];
         System.arraycopy(searchToken, 0, c, 0, searchToken.length);
         System.arraycopy(pseudorandomVal, 0, c, searchToken.length, pseudorandomVal.length);
