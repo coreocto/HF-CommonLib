@@ -10,6 +10,15 @@ public class KeyCipher {
     private IByteCipher k1Cipher;
     private IByteCipher k2Cipher;
     private IKeyedHashFunc keyedHashFunc;
+    private IByteCipher byteCipher;
+
+    public IByteCipher getByteCipher() {
+        return byteCipher;
+    }
+
+    public void setByteCipher(IByteCipher byteCipher) {
+        this.byteCipher = byteCipher;
+    }
 
     public IKeyedHashFunc getKeyedHashFunc() {
         return keyedHashFunc;
