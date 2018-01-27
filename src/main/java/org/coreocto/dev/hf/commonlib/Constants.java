@@ -3,6 +3,7 @@ package org.coreocto.dev.hf.commonlib;
 public class Constants {
     public static final int SSE_TYPE_SUISE = 0;
     public static final int SSE_TYPE_VASST = 1;
+    public static final int SSE_TYPE_MCES = 2;
 
     public static final int FILE_TYPE_TEXT = 0;
     public static final int FILE_TYPE_PDF = 1;
