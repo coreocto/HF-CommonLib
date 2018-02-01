@@ -4,8 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Index {
-    public String docId = null;
+    private String docId = null;
     private List<String> bloomFilters = new ArrayList<>();
+    private int wordCnt = 0;
+
+    public int getWordCnt() {
+        return wordCnt;
+    }
+
+    public void setWordCnt(int wordCnt) {
+        this.wordCnt = wordCnt;
+    }
 
     public String getDocId() {
         return docId;
