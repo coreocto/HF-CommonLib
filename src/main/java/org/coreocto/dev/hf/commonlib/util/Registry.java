@@ -2,6 +2,7 @@ package org.coreocto.dev.hf.commonlib.util;
 
 import org.coreocto.dev.hf.commonlib.crypto.IHashFunc;
 
+@Deprecated
 public class Registry {
     private IBase64 base64;
     private ILogger logger;
