@@ -7,6 +7,15 @@ public class Index {
     private String docId = null;
     private List<String> bloomFilters = new ArrayList<>();
     private int wordCnt = 0;
+    private double falsePositive = 0;
+
+    public double getFalsePositive() {
+        return falsePositive;
+    }
+
+    public void setFalsePositive(double falsePositive) {
+        this.falsePositive = falsePositive;
+    }
 
     public int getWordCnt() {
         return wordCnt;
